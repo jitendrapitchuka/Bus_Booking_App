@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:contentPadding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+        android:id="@+id/information1">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="From Manipur"
+            android:textSize="25dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="To Nagaland"
+            android:layout_below="@+id/textViewUsername"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUsername"
+            android:layout_alignRight="@+id/textViewUsername"
+            android:layout_marginTop="-39dp"
+            android:layout_marginRight="13dp"
+
+            android:padding="5dp"
+            android:text="3.30Hour"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/destinationtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUsername"
+            android:layout_alignRight="@+id/textViewUsername"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+
+            android:padding="5dp"
+            android:text="6.30Hour"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+   </androidx.cardview.widget.CardView>
